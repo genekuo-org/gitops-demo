@@ -32,7 +32,7 @@ public class WelcomeResource {
         String welcomeMessage = randomMessage(Welcome.listAll());
         String name = nameService.generateName("Bearer " + token);
 
-        return welcomeMessage + " " + name;
+        return welcomeMessage + "OK " + name;
     }
 
     private String randomMessage(List<Welcome> welcomeMessages) {
