@@ -11,7 +11,7 @@ spec:
       selfHeal: true
   source:
     #repoURL: http://gitea.default.svc.cluster.local:3000/gitea/kubernetes-secrets-source.git
-    #repoURL: https://github.com/lordofthejars/kubernetes-secrets-source.git
+    repoURL: https://github.com/genekuo-org/gitops-demo.git
     targetRevision: HEAD
     path: welcome-message-gitops/apps
   destination:
