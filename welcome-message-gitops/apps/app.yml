@@ -21,7 +21,7 @@ spec:
                 fieldRef:
                   fieldPath: metadata.namespace
           #image: quay.io/lordofthejars/welcome-message:1.0.0
-          image: docker.io/genedocker/welcome-message:1.0.3
+          image: docker.io/genedocker/welcome-message:1.0.4
           imagePullPolicy: Always
           name: welcome-message
           ports:
