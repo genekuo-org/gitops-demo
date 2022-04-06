@@ -1,7 +1,7 @@
 apiVersion: tekton.dev/v1beta1
 kind: PipelineRun
 metadata:
-  generateName: welcome-pipeline-run-
+  name: welcome-pipeline-run3
 spec:
   params:
     - name: imageTag
