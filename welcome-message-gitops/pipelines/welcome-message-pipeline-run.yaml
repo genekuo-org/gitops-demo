@@ -1,0 +1,18 @@
+apiVersion: tekton.dev/v1beta1
+kind: PipelineRun
+metadata:
+  generateName: welcome-pipeline-run-
+spec:
+  params:
+    - name: imageTag
+      value: "1.0.5"
+  resources:
+    - name: appSource
+      resourceRef:
+        name: welcome-service-git-source
+    - name: appGitOps
+      resourceRef:
+        name: welcome-service-git-gitops-source
+  serviceAccountName: git-service-account
+  pipelineRef:
+    name: welcome-deployment
